@@ -1,0 +1,50 @@
+﻿.btn {
+  background-color: #2ecc71;
+  border-width: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  color: #ecf0f1;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .3s;
+  width: 140px;
+}
+
+.btn:hover, .btn:focus {
+  background-color: $color-teal;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+  background-color: rgba(236, 240, 241, .3);
+  border-radius: 100%;
+  display: block;
+  left: 50%;
+  padding-top: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+}
+
+.btn:active:before {  
+  padding-top: 120%;  
+  transition: width .5s ease-out, padding-top .5s ease-out;
+  width: 120%;
+}

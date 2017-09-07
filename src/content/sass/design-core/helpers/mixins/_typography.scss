@@ -1,0 +1,137 @@
+﻿@mixin typography-caption() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: $font-weight-regular;
+    line-height: 12px;
+    letter-spacing: .2px;
+}
+
+@mixin typography-body() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: $font-weight-regular;
+    line-height: 20px;
+    letter-spacing: .1px;
+}
+
+@mixin typography-body-2() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: $font-weight-medium;
+    line-height: 24px;
+    letter-spacing: .1px;
+}
+
+@mixin typography-subhead() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 24px;
+    letter-spacing: .1px;
+}
+
+@mixin typography-subhead-2() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 28px;
+    letter-spacing: .1px;
+}
+
+@mixin typography-title() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: $font-weight-light;
+    line-height: 20px;
+    letter-spacing: .05px;
+}
+
+@mixin typography-headline() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: $font-weight-regular;
+    line-height: 32px;
+}
+
+@mixin typography-display-1() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: $font-weight-regular;
+    line-height: 24px;
+
+    // Tablet
+    @media only screen and (min-width: $breakpoint-grid-tablet) {
+        font-size: 20px;
+        font-weight: $font-weight-regular;
+        line-height: 26px;
+    }
+
+    // Desktop
+    @media only screen and (min-width: $breakpoint-grid-desktop) {
+        font-size: 26px;
+        font-weight: $font-weight-regular;
+        line-height: 32px;
+    }
+}
+
+@mixin typography-display-2() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: $font-weight-bold;
+    line-height: 24px;
+
+    // Tablet
+    @media only screen and (min-width: $breakpoint-grid-tablet) {
+        font-size: 39px;
+        font-weight: $font-weight-bold;
+        line-height: 42px;
+    }
+
+    // Desktop
+    @media only screen and (min-width: $breakpoint-grid-desktop) {
+        font-size: 45px;
+        font-weight: $font-weight-bold;
+        line-height: 48px;
+    }
+}
+
+@mixin typography-display-3() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 23px;
+    font-weight: $font-weight-light;
+    line-height: 23px;
+    letter-spacing: -.05px;
+
+    // Tablet
+    @media only screen and (min-width: $breakpoint-grid-tablet) {
+        font-size: 40px;
+        font-weight: $font-weight-light;
+        line-height: 40px;
+    }
+
+    // Desktop
+    @media only screen and (min-width: $breakpoint-grid-desktop) {
+        font-size: 46px;
+        font-weight: $font-weight-light;
+        line-height: 46px;
+    }
+}
+
+@mixin typography-display-4() {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: 112px;
+    font-weight: $font-weight-light;
+    line-height: 112px;
+    letter-spacing: -.1px;
+}

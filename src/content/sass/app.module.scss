@@ -1,0 +1,59 @@
+﻿@import './design-core/design-core',
+'./modules/modules',
+'./shared/shared';
+html {
+    background-color: $color-background;
+    color: $color-app-text;
+    font-family: 'Bree Serif', serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {    
+    height: 100%;    
+    margin: 0;
+    min-width: 375px;
+    font-size: 12px; // Tablet
+    @media only screen and (min-width: $breakpoint-grid-tablet) {
+        font-size: 16px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+.app {
+    background-color: $color-app-bg;
+    height: 100%;
+    overflow: auto;
+    margin: auto;
+    max-width: 1920px;
+    &>div {
+        height: 100%;
+    }
+}
+
+.display-1 {
+    @include typography-display-1();
+    text-transform: uppercase;
+}
+
+.display-2 {
+    @include typography-display-2();        
+}
+
+.display-3 {
+    @include typography-display-3();
+}
+
+// Desktop
+@media only screen and (min-width: $breakpoint-grid-desktop) {}
